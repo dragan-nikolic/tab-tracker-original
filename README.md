@@ -30,3 +30,7 @@ cd server
 npm install
 npm start
 ```
+
+### Postman testing
+
+Import in Postman the colletion and execute the saved HTTP requests.

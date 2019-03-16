@@ -1,0 +1,60 @@
+{
+	"info": {
+		"_postman_id": "eaff59c4-44bd-47fb-b457-684adecb9c14",
+		"name": "Tab Tracker",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create Song",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"title\":\"dragan title\",\n\t\"artist\":\"dragan nikolic\",\n\t\"genre\":\"rock\",\n\t\"album\":\"draganovi hitovi\",\n\t\"albumImageUrl\":\"dragan.jpg\",\n\t\"youtubeId\":\"youtubeurl\",\n\t\"lyrics\":\"dragan lyrics\",\n\t\"tab\":\"dragan tab\"\n}\n"
+				},
+				"url": {
+					"raw": "localhost:8081/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Songs",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8081/songs",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"songs"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
